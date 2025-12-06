@@ -33,17 +33,17 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold mb-6 text-lg">Services</h4>
             <ul className="space-y-4 text-gray-400">
-                <li><a href="#" className="hover:text-purple-500 transition-colors">Live Chat</a></li>
-                <li><a href="#" className="hover:text-purple-500 transition-colors">Email Support</a></li>
-                <li><a href="#" className="hover:text-purple-500 transition-colors">Tech Support</a></li>
-                <li><a href="#" className="hover:text-purple-500 transition-colors">Onboarding</a></li>
+                <li><a href="#services" className="hover:text-purple-500 transition-colors">Live Chat</a></li>
+                <li><a href="#services" className="hover:text-purple-500 transition-colors">Email Support</a></li>
+                <li><a href="#services" className="hover:text-purple-500 transition-colors">Tech Support</a></li>
+                <li><a href="#services" className="hover:text-purple-500 transition-colors">Onboarding</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold mb-6 text-lg">Company</h4>
             <ul className="space-y-4 text-gray-400">
-                <li><a href="#" className="hover:text-purple-500 transition-colors">About Us</a></li>
+                <li><a href="#about" className="hover:text-purple-500 transition-colors">About Us</a></li>
                 <li><a href="#" className="hover:text-purple-500 transition-colors">Careers</a></li>
                 <li><a href="#" className="hover:text-purple-500 transition-colors">Privacy Policy</a></li>
                 <li><a href="#" className="hover:text-purple-500 transition-colors">Terms of Service</a></li>
