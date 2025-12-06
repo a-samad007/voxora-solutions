@@ -2,7 +2,11 @@ import React from 'react';
 import { ThreeBackground } from './ThreeBackground';
 import { ArrowRight } from 'lucide-react';
 
-export const Hero: React.FC = () => {
+interface HeroProps {
+  onNavigate: () => void;
+}
+
+export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
     <section className="relative w-full h-screen bg-black overflow-hidden flex items-center">
       {/* 3D Canvas Background */}
@@ -33,15 +37,15 @@ export const Hero: React.FC = () => {
             <p className="text-gray-300 text-lg mb-8 leading-relaxed max-w-md">
               We empower power startups with human-first CX. Live chat, email, and tech support designed to rewrite the rules of growth and resilience.
             </p>
-            <a 
-              href="#services" 
+            <button 
+              onClick={onNavigate} 
               className="group flex items-center gap-3 text-white font-bold text-lg hover:text-purple-400 transition-colors"
             >
               See what we do
               <div className="bg-purple-600 p-2 group-hover:bg-purple-500 transition-colors">
                 <ArrowRight size={20} />
               </div>
-            </a>
+            </button>
           </div>
         </div>
 

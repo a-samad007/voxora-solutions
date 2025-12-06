@@ -1,7 +1,23 @@
 import React from 'react';
 import { Twitter, Linkedin, Instagram } from 'lucide-react';
+import { PageView } from '../App';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+    onNavigate: (page: PageView) => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
+  const handleLinkClick = (e: React.MouseEvent, page: PageView, hash?: string) => {
+    e.preventDefault();
+    onNavigate(page);
+    if (page === 'home' && hash) {
+        setTimeout(() => {
+            const el = document.querySelector(hash);
+            el?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+    }
+  };
+
   return (
     <footer className="bg-black text-white py-16 border-t border-neutral-900">
       <div className="max-w-7xl mx-auto px-6">
@@ -33,17 +49,17 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold mb-6 text-lg">Services</h4>
             <ul className="space-y-4 text-gray-400">
-                <li><a href="#services" className="hover:text-purple-500 transition-colors">Live Chat</a></li>
-                <li><a href="#services" className="hover:text-purple-500 transition-colors">Email Support</a></li>
-                <li><a href="#services" className="hover:text-purple-500 transition-colors">Tech Support</a></li>
-                <li><a href="#services" className="hover:text-purple-500 transition-colors">Onboarding</a></li>
+                <li><button onClick={(e) => handleLinkClick(e, 'services')} className="hover:text-purple-500 transition-colors text-left">Live Chat</button></li>
+                <li><button onClick={(e) => handleLinkClick(e, 'services')} className="hover:text-purple-500 transition-colors text-left">Email Support</button></li>
+                <li><button onClick={(e) => handleLinkClick(e, 'services')} className="hover:text-purple-500 transition-colors text-left">Tech Support</button></li>
+                <li><button onClick={(e) => handleLinkClick(e, 'services')} className="hover:text-purple-500 transition-colors text-left">Appointment Setting</button></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold mb-6 text-lg">Company</h4>
             <ul className="space-y-4 text-gray-400">
-                <li><a href="#about" className="hover:text-purple-500 transition-colors">About Us</a></li>
+                <li><button onClick={(e) => handleLinkClick(e, 'home', '#about')} className="hover:text-purple-500 transition-colors text-left">About Us</button></li>
                 <li><a href="#" className="hover:text-purple-500 transition-colors">Careers</a></li>
                 <li><a href="#" className="hover:text-purple-500 transition-colors">Privacy Policy</a></li>
                 <li><a href="#" className="hover:text-purple-500 transition-colors">Terms of Service</a></li>
