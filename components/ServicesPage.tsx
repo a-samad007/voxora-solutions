@@ -3,9 +3,10 @@ import { Phone, Mail, MessageSquare, Terminal, CalendarCheck, CheckCircle, Arrow
 
 interface ServicesPageProps {
   onBack: () => void;
+  onContact: () => void;
 }
 
-export const ServicesPage: React.FC<ServicesPageProps> = ({ onBack }) => {
+export const ServicesPage: React.FC<ServicesPageProps> = ({ onBack, onContact }) => {
   const services = [
     {
       title: "Call Support",
@@ -86,7 +87,10 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onBack }) => {
         <div className="mt-20 p-12 bg-gradient-to-r from-purple-900/20 to-neutral-900/20 border border-purple-600/20 rounded-2xl text-center">
              <h3 className="text-3xl font-bold text-white mb-4">Ready to upgrade your support?</h3>
              <p className="text-gray-300 mb-8 max-w-xl mx-auto">Contact us today to discuss a custom package tailored to your startup's needs.</p>
-             <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 font-bold rounded-full transition-colors">
+             <button 
+                onClick={onContact}
+                className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 font-bold rounded-full transition-colors"
+             >
                 Get a Proposal
              </button>
         </div>

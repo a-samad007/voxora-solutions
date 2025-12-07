@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, CheckCircle, Target, Users, Zap, Award, Heart } from 'lucide-react';
-// Importing images ensures the bundler resolves the correct path
+
+// Using direct paths to public assets
 const founder1 = '/assets/founder1.jpg';
 const founder2 = '/assets/founder2.jpg';
 
@@ -94,7 +95,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
             <div className="order-2 lg:order-1">
                 <FadeIn direction="left">
                     <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-                        Delivering World-Class Quality at <span className="text-purple-500">30% Less Cost</span>
+                        Delivering World-Class Quality at <span className="text-purple-500">40% Less Cost</span>
                     </h2>
                 </FadeIn>
                 <div className="space-y-6 text-gray-300 text-lg leading-relaxed font-light">
@@ -188,18 +189,18 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                         <div className="relative overflow-hidden rounded-2xl aspect-[3/4] mb-6 border border-neutral-800">
                             <img
                               src={founder1}
-                              alt="Co-Founder"
+                              alt="Muhammad Musa"
                               loading="lazy"
                               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
                             <div className="absolute bottom-0 left-0 p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                                 <div className="h-1 w-12 bg-purple-500 mb-2"></div>
-                                <p className="text-gray-300 text-sm">Passionate about operational excellence and building diverse, high-performing teams.</p>
+                                <p className="text-gray-300 text-sm">Visionary leadership driving global operational excellence.</p>
                             </div>
                         </div>
-                        <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-500 transition-colors">Co-Founder</h3>
-                        <p className="text-purple-500 font-medium tracking-wide uppercase text-sm">Strategy & Operations</p>
+                        <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-500 transition-colors">Muhammad Musa</h3>
+                        <p className="text-purple-500 font-medium tracking-wide uppercase text-sm">Founder & CEO</p>
                     </div>
                 </FadeIn>
 
@@ -209,18 +210,18 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                         <div className="relative overflow-hidden rounded-2xl aspect-[3/4] mb-6 border border-neutral-800">
                             <img
                               src={founder2}
-                              alt="Co-Founder"
+                              alt="Hassan Riasat"
                               loading="lazy"
                               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
                             <div className="absolute bottom-0 left-0 p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                                 <div className="h-1 w-12 bg-purple-500 mb-2"></div>
-                                <p className="text-gray-300 text-sm">Driving growth through innovative technology solutions and scalable infrastructure.</p>
+                                <p className="text-gray-300 text-sm">Driving growth through innovative technology solutions.</p>
                             </div>
                         </div>
-                        <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-500 transition-colors">Co-Founder</h3>
-                        <p className="text-purple-500 font-medium tracking-wide uppercase text-sm">Technology & Growth</p>
+                        <h3 className="text-3xl font-bold text-white mb-1 group-hover:text-purple-500 transition-colors">Hassan Riasat</h3>
+                        <p className="text-purple-500 font-medium tracking-wide uppercase text-sm">Co-Founder & COO</p>
                     </div>
                 </FadeIn>
             </div>

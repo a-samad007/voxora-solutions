@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Services } from './components/Services';
+import { Savings } from './components/Savings';
 import { About } from './components/About';
 import { Footer } from './components/Footer';
 import { ServicesPage } from './components/ServicesPage';
 import { AboutPage } from './components/AboutPage';
+import { ContactPage } from './components/ContactPage';
 
-export type PageView = 'home' | 'services' | 'about';
+export type PageView = 'home' | 'services' | 'about' | 'contact';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<PageView>('home');
@@ -25,14 +27,18 @@ const App: React.FC = () => {
           <>
             <Hero onNavigate={() => navigateTo('services')} />
             <Services onNavigate={() => navigateTo('services')} />
+            <Savings onNavigate={() => navigateTo('contact')} />
             <About />
           </>
         )}
         {currentPage === 'services' && (
-          <ServicesPage onBack={() => navigateTo('home')} />
+          <ServicesPage onBack={() => navigateTo('home')} onContact={() => navigateTo('contact')} />
         )}
         {currentPage === 'about' && (
           <AboutPage onBack={() => navigateTo('home')} />
+        )}
+        {currentPage === 'contact' && (
+          <ContactPage onBack={() => navigateTo('home')} />
         )}
       </main>
       <Footer onNavigate={navigateTo} />

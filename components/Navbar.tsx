@@ -81,7 +81,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             Careers
           </button>
           
-          <button className="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 text-sm font-semibold transition-colors flex items-center gap-2">
+          <button 
+            onClick={() => handleNavClick('contact')}
+            className="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 text-sm font-semibold transition-colors flex items-center gap-2"
+          >
             Get in touch <ChevronRight size={16} />
           </button>
         </div>
@@ -110,7 +113,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
           >
             About Us
           </button>
-          <button className="bg-purple-600 w-full py-3 mt-4 font-bold flex items-center justify-center gap-2">
+          <button 
+            onClick={() => handleNavClick('contact')}
+            className="bg-purple-600 w-full py-3 mt-4 font-bold flex items-center justify-center gap-2"
+          >
             Contact Us <ChevronRight size={18} />
           </button>
         </div>
