@@ -65,10 +65,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             Capabilities
           </button>
           <button
-            onClick={() => handleNavClick('home', '#about')}
-            className="text-sm font-medium text-white hover:text-purple-400 transition-colors"
+            onClick={() => handleNavClick('about')}
+            className={`text-sm font-medium hover:text-purple-400 transition-colors ${currentPage === 'about' ? 'text-purple-500' : 'text-white'}`}
           >
-            Industries
+            About Us
           </button>
            <button
             className="text-sm font-medium text-white hover:text-purple-400 transition-colors"
@@ -106,9 +106,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
           </button>
           <button
             className="text-lg font-medium py-2 border-b border-white/5 text-left"
-            onClick={() => handleNavClick('home', '#about')}
+            onClick={() => handleNavClick('about')}
           >
-            Industries
+            About Us
           </button>
           <button className="bg-purple-600 w-full py-3 mt-4 font-bold flex items-center justify-center gap-2">
             Contact Us <ChevronRight size={18} />

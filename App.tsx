@@ -5,8 +5,9 @@ import { Services } from './components/Services';
 import { About } from './components/About';
 import { Footer } from './components/Footer';
 import { ServicesPage } from './components/ServicesPage';
+import { AboutPage } from './components/AboutPage';
 
-export type PageView = 'home' | 'services';
+export type PageView = 'home' | 'services' | 'about';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<PageView>('home');
@@ -20,14 +21,18 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-black text-white overflow-x-hidden selection:bg-purple-600 selection:text-white">
       <Navbar onNavigate={navigateTo} currentPage={currentPage} />
       <main>
-        {currentPage === 'home' ? (
+        {currentPage === 'home' && (
           <>
             <Hero onNavigate={() => navigateTo('services')} />
             <Services onNavigate={() => navigateTo('services')} />
             <About />
           </>
-        ) : (
+        )}
+        {currentPage === 'services' && (
           <ServicesPage onBack={() => navigateTo('home')} />
+        )}
+        {currentPage === 'about' && (
+          <AboutPage onBack={() => navigateTo('home')} />
         )}
       </main>
       <Footer onNavigate={navigateTo} />
