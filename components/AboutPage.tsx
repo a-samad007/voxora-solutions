@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, CheckCircle, Target, Users, Zap, Award, Heart } from 'lucide-react';
 // Importing images ensures the bundler resolves the correct path
-import founder1 from '../assets/founder1.jpg';
-import founder2 from '../assets/founder2.jpg';
+const founder1 = '/assets/founder1.jpg';
+const founder2 = '/assets/founder2.jpg';
 
 interface AboutPageProps {
   onBack: () => void;
@@ -187,9 +187,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                     <div className="group cursor-pointer">
                         <div className="relative overflow-hidden rounded-2xl aspect-[3/4] mb-6 border border-neutral-800">
                             <img
-                                src={founder1}
-                                alt="Co-Founder"
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
+                              src={founder1}
+                              alt="Co-Founder"
+                              loading="lazy"
+                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
                             <div className="absolute bottom-0 left-0 p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
@@ -207,9 +208,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                     <div className="group cursor-pointer">
                         <div className="relative overflow-hidden rounded-2xl aspect-[3/4] mb-6 border border-neutral-800">
                             <img
-                                src={founder2}
-                                alt="Co-Founder"
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
+                              src={founder2}
+                              alt="Co-Founder"
+                              loading="lazy"
+                              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
                             <div className="absolute bottom-0 left-0 p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
