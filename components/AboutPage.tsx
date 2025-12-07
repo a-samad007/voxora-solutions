@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, CheckCircle, Target, Users, Zap, Award, Heart } from 'lucide-react';
+// Importing images ensures the bundler resolves the correct path
+import founder1 from '../assets/founder1.jpg';
+import founder2 from '../assets/founder2.jpg';
 
 interface AboutPageProps {
   onBack: () => void;
@@ -19,8 +22,6 @@ const FadeIn: React.FC<{
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Optional: Stop observing once visible to only animate once
-          // observer.unobserve(entry.target); 
         }
       });
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
@@ -186,7 +187,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                     <div className="group cursor-pointer">
                         <div className="relative overflow-hidden rounded-2xl aspect-[3/4] mb-6 border border-neutral-800">
                             <img
-                                src="/assets/founder1.jpg"
+                                src={founder1}
                                 alt="Co-Founder"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
                             />
@@ -206,7 +207,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                     <div className="group cursor-pointer">
                         <div className="relative overflow-hidden rounded-2xl aspect-[3/4] mb-6 border border-neutral-800">
                             <img
-                                src="/assets/founder2.jpg"
+                                src={founder2}
                                 alt="Co-Founder"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale group-hover:grayscale-0"
                             />
