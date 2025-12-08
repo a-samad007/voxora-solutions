@@ -30,20 +30,20 @@ export const Savings: React.FC<SavingsProps> = ({ onNavigate }) => {
   }, []);
 
   const data = [
-    { label: 'US', value: 16000 },
-    { label: 'UK', value: 14500 },
-    { label: 'Canada', value: 14000 },
-    { label: 'Australia', value: 15500 },
+    { label: 'US', value: 18500 },
+    { label: 'UK', value: 14200 },
+    { label: 'Canada', value: 12500 },
+    { label: 'Australia', value: 16800 },
   ];
 
-  const maxVal = 16000;
+  const maxVal = 20000;
 
   return (
     <section ref={sectionRef} className="py-24 bg-neutral-900 border-t border-neutral-800">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Annual Savings</h2>
         <p className="text-gray-400 max-w-3xl mx-auto mb-16 text-lg leading-relaxed">
-          Our streamlined operations and offshore efficiency enable significant annual cost reductions for our clients. By leveraging our Pakistan-based team, businesses can save up to <span className="text-purple-500 font-bold">30% per agent</span> compared to hiring in the US, UK, Canada, or Australia without sacrificing quality or performance.
+          Our streamlined operations and offshore efficiency enable significant annual cost reductions for our clients. By leveraging our Pakistan-based team, businesses can save up to <span className="text-purple-500 font-bold">40% per agent</span> compared to hiring in the US, UK, Canada, or Australia without sacrificing quality or performance.
         </p>
 
         <div className="bg-black border border-neutral-800 rounded-3xl p-8 md:p-16 relative overflow-hidden max-w-4xl mx-auto shadow-2xl shadow-black/50">
@@ -56,9 +56,9 @@ export const Savings: React.FC<SavingsProps> = ({ onNavigate }) => {
           <div className="relative h-80 w-full max-w-3xl mx-auto mb-8">
             {/* Y-Axis Grid */}
             <div className="absolute inset-0 flex flex-col justify-between z-0">
-              {[16000, 12000, 8000, 4000, 0].map((val) => (
+              {[20000, 15000, 10000, 5000, 0].map((val) => (
                 <div key={val} className="flex items-center w-full group">
-                  <span className="text-xs text-gray-600 font-mono w-12 text-right pr-3">${val}</span>
+                  <span className="text-xs text-gray-600 font-mono w-12 text-right pr-3">${val.toLocaleString()}</span>
                   <div className="h-px bg-neutral-800 w-full"></div>
                 </div>
               ))}
@@ -98,7 +98,7 @@ export const Savings: React.FC<SavingsProps> = ({ onNavigate }) => {
           </div>
 
           <p className="text-gray-400 text-sm md:text-base mt-12 tracking-wide">
-             Switch teams. Switch cost. <span className="text-purple-400 font-semibold">Save up to $15,000 USD per year.</span>
+             Switch teams. Switch cost. <span className="text-purple-400 font-semibold">Save up to $18,500 USD per year.</span>
           </p>
           
           <button 
