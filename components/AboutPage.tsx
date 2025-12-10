@@ -101,7 +101,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                 <div className="space-y-6 text-gray-300 text-lg leading-relaxed font-light">
                     <FadeIn delay={200} direction="left">
                         <p>
-                            We are an Australian-based company proudly running our core operations in Pakistan. This strategic setup allows us to deliver world-class quality at a fraction of the cost making our services up to 40% more cost-effective than those in the US, UK, Canada and Australia.
+                            We are an Australian-based company proudly running our core operations in Pakistan. This strategic setup allows us to deliver world-class quality at a fraction of the cost making our services up to 30% more cost-effective than those in the US, UK, Canada and Australia.
                         </p>
                     </FadeIn>
                     <FadeIn delay={400} direction="left">
@@ -143,7 +143,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                         <FadeIn delay={200}>
                             <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Mission</h2>
                             <p className="text-xl md:text-2xl text-gray-300 font-light leading-relaxed">
-                                To redefine global outsourcing by providing premium cost-effective customer support solutions that help businesses scale faster without compromising on quality.
+                                To redefine global outsourcing by providing premium cost-effective customer support solutions that help businesses scale faster — without compromising on quality.
                             </p>
                         </FadeIn>
                     </div>
@@ -158,7 +158,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
                             { title: "Integrity", desc: "We stay transparent, honest, and committed to our word", icon: Heart },
                             { title: "Efficiency", desc: "Smart operations mean more savings and smoother outcomes", icon: Zap },
                             { title: "Innovation", desc: "We continuously improve to deliver better experiences every day", icon: Target },
-                            { title: "Partnership", desc: "Your success is our success we grow together", icon: Users }
+                            { title: "Partnership", desc: "Your success is our success — we grow together", icon: Users }
                         ].map((val, i) => (
                             <FadeIn key={i} delay={i * 100 + 300} direction="up">
                                 <div className="flex gap-5 group">

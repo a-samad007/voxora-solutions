@@ -70,13 +70,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
           >
             About Us
           </button>
-           <button
-            className="text-sm font-medium text-white hover:text-purple-400 transition-colors"
-          >
-            Insights
-          </button>
-           <button
-            className="text-sm font-medium text-white hover:text-purple-400 transition-colors"
+          <button
+            onClick={() => handleNavClick('careers')}
+            className={`text-sm font-medium hover:text-purple-400 transition-colors ${currentPage === 'careers' ? 'text-purple-500' : 'text-white'}`}
           >
             Careers
           </button>
@@ -112,6 +108,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             onClick={() => handleNavClick('about')}
           >
             About Us
+          </button>
+          <button
+            className="text-lg font-medium py-2 border-b border-white/5 text-left"
+            onClick={() => handleNavClick('careers')}
+          >
+            Careers
           </button>
           <button 
             onClick={() => handleNavClick('contact')}

@@ -35,7 +35,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
             <div className="w-12 h-1 bg-purple-600 mb-6"></div>
             <h2 className="text-2xl font-bold mb-4">Shaping customer support, today</h2>
             <p className="text-gray-300 text-lg mb-8 leading-relaxed max-w-md">
-              We empower power startups with human-first CX. Live chat, email, and tech support designed to rewrite the rules of growth and resilience.
+              We empower startups with human-first CX. Live chat, email, and tech support designed to rewrite the rules of growth and resilience.
             </p>
             <button 
               onClick={onNavigate} 

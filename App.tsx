@@ -8,8 +8,11 @@ import { Footer } from './components/Footer';
 import { ServicesPage } from './components/ServicesPage';
 import { AboutPage } from './components/AboutPage';
 import { ContactPage } from './components/ContactPage';
+import { PrivacyPolicyPage } from './components/PrivacyPolicyPage';
+import { TermsPage } from './components/TermsPage';
+import { CareersPage } from './components/CareersPage';
 
-export type PageView = 'home' | 'services' | 'about' | 'contact';
+export type PageView = 'home' | 'services' | 'about' | 'contact' | 'privacy' | 'terms' | 'careers';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<PageView>('home');
@@ -39,6 +42,15 @@ const App: React.FC = () => {
         )}
         {currentPage === 'contact' && (
           <ContactPage onBack={() => navigateTo('home')} />
+        )}
+        {currentPage === 'privacy' && (
+          <PrivacyPolicyPage onBack={() => navigateTo('home')} />
+        )}
+        {currentPage === 'terms' && (
+          <TermsPage onBack={() => navigateTo('home')} />
+        )}
+        {currentPage === 'careers' && (
+          <CareersPage onBack={() => navigateTo('home')} />
         )}
       </main>
       <Footer onNavigate={navigateTo} />
