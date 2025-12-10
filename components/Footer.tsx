@@ -39,9 +39,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     <Instagram size={18} />
                 </a>
                 <a href="#" className="p-2 bg-neutral-900 hover:bg-purple-600 transition-colors rounded-full">
-                    <Linkedin size={18} />
-                </a>
-                <a href="#" className="p-2 bg-neutral-900 hover:bg-purple-600 transition-colors rounded-full">
                     <Twitter size={18} />
                 </a>
             </div>
