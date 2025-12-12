@@ -23,69 +23,108 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onBack }) 
 
         <div className="mb-12 border-b border-neutral-800 pb-8">
             <span className="text-purple-500 font-bold tracking-widest uppercase text-sm mb-4 block">Legal</span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Privacy Policy</h1>
-            <p className="text-gray-400">Last Updated: October 2023</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">Privacy Policy</h1>
+            <h2 className="text-xl text-gray-200 font-medium mb-4">Voxora Solution Centre (Australia)</h2>
+            <div className="flex flex-col gap-2 text-sm text-gray-500">
+                <p>ABN XX XXX XXX XXX | Registered Office: Goddard Drive, Salisbury Park, Adelaide, SA 5109</p>
+                <p>Last Updated: 12 December 2025</p>
+            </div>
         </div>
 
         <div className="space-y-12 text-gray-300 leading-relaxed font-light">
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">1. Introduction</h2>
-            <p className="mb-4">
-              Voxora Solution Center ("we," "our," or "us") respects your privacy and is committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you.
-            </p>
-            <p>
-              This website is intended for business-to-business (B2B) interactions and is not intended for children.
+            <p className="text-lg">
+              We provide inbound customer support services (calls, emails, live chat, tech support, appointment setting, and complaint management) on behalf of businesses worldwide from our secure delivery centres in Pakistan.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">2. The Data We Collect</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">1. Data We Process</h2>
             <p className="mb-4">
-              We may collect, use, store, and transfer different kinds of personal data about you which we have grouped together follows:
+              We act only as a <strong>Data Processor</strong>. We process personal data strictly on instructions from our clients (the Data Controllers):
             </p>
             <ul className="list-disc pl-6 space-y-2 marker:text-purple-500">
-              <li><strong className="text-white">Identity Data:</strong> includes first name, last name, username or similar identifier, and title.</li>
-              <li><strong className="text-white">Contact Data:</strong> includes billing address, delivery address, email address, and telephone numbers.</li>
-              <li><strong className="text-white">Technical Data:</strong> includes internet protocol (IP) address, your login data, browser type and version, time zone setting and location, browser plug-in types and versions, operating system and platform, and other technology on the devices you use to access this website.</li>
-              <li><strong className="text-white">Usage Data:</strong> includes information about how you use our website, products, and services.</li>
+              <li>Name, phone, email, address</li>
+              <li>Inquiry/complaint details</li>
+              <li>Call recordings, chat transcripts, email threads</li>
+              <li>Device and IP information (for tech support)</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">3. How We Use Your Personal Data</h2>
-            <p className="mb-4">
-              We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:
+            <h2 className="text-2xl font-bold text-white mb-4">2. Purpose</h2>
+            <p>
+              Data is used solely to resolve customer inquiries, schedule appointments, and provide the contracted support services.
             </p>
-            <ul className="list-disc pl-6 space-y-2 marker:text-purple-500">
-              <li>Where we need to perform the contract we are about to enter into or have entered into with you.</li>
-              <li>Where it is necessary for our legitimate interests (or those of a third party) and your interests and fundamental rights do not override those interests.</li>
-              <li>Where we need to comply with a legal obligation.</li>
-            </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">4. Data Security</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">3. Legal Basis</h2>
             <p>
-              We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used, or accessed in an unauthorized way, altered, or disclosed. In addition, we limit access to your personal data to those employees, agents, contractors, and other third parties who have a business need to know. They will only process your personal data on our instructions, and they are subject to a duty of confidentiality.
+              Processing is performed under contract with our clients (Article 28 GDPR, Australian Privacy Principles).
             </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">4. Security Measures</h2>
+            <ul className="list-disc pl-6 space-y-2 marker:text-purple-500">
+              <li>ISO 27001:2022 certified</li>
+              <li>End-to-end encryption</li>
+              <li>Restricted clean-desk & clean-screen policy</li>
+              <li>Regular security audits and penetration testing</li>
+            </ul>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">5. International Transfers</h2>
             <p>
-              As a global business with operations in Australia and Pakistan, we may transfer your personal data outside the European Economic Area (EEA) or your country of residence. Whenever we transfer your personal data, we ensure a similar degree of protection is afforded to it by ensuring at least one of the specific safeguards approved by relevant data protection laws is implemented.
+              Data is transferred to and processed in Pakistan under EU Standard Contractual Clauses (SCCs) and Australian adequacy mechanisms.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">6. Contact Us</h2>
-            <p className="mb-4">
-              If you have any questions about this privacy policy or our privacy practices, please contact us at:
+            <h2 className="text-2xl font-bold text-white mb-4">6. Retention</h2>
+            <p>
+              Records retained maximum 12 months unless client requires longer or shorter period.
             </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">7. Data Subject Rights</h2>
+            <p>
+              End-customers should contact the original brand/company. The client will coordinate with Voxora to fulfil access, deletion, or correction requests within 30 days.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">8. Sub-Processors</h2>
+            <p>
+              We engage the following categories of sub-processors: cloud infrastructure (AWS, Google Cloud), telephony providers (Twilio, Asterisk), ticketing systems (Zendesk, Freshdesk, etc.). Current list available on request.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">9. Data Breach Notification</h2>
+            <p>
+              In the event of a personal data breach, Voxora will notify the affected Client without undue delay and, where feasible, not later than 48 hours after becoming aware.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">10. Children’s Data</h2>
+            <p>
+              We do not knowingly process personal data of individuals under the age of 16.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">11. Contact Our Data Protection Officer</h2>
             <div className="bg-neutral-900 p-6 rounded-lg border border-neutral-800">
-                <p className="font-bold text-white">Voxora Solution Center</p>
-                <p>Email: <a href="mailto:Hello@voxorasolution.com" className="text-purple-500 hover:text-purple-400">Hello@voxorasolution.com</a></p>
-                <p>Address: Goddard Drive, Salisbury Park, Adelaide, SA 5109, Australia</p>
+                <p className="mb-2"><strong className="text-white">Email:</strong> <a href="mailto:dpo@voxorasolution.com.au" className="text-purple-500 hover:text-purple-400 font-medium">dpo@voxorasolution.com.au</a></p>
+                <p className="text-sm text-gray-500 mt-4 pt-4 border-t border-neutral-800">
+                    Voxora Solution Centre<br/>
+                    Adelaide, Australia | 24/7 Delivery: Pakistan
+                </p>
             </div>
           </section>
         </div>

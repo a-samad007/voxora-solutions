@@ -23,69 +23,154 @@ export const TermsPage: React.FC<TermsPageProps> = ({ onBack }) => {
 
         <div className="mb-12 border-b border-neutral-800 pb-8">
             <span className="text-purple-500 font-bold tracking-widest uppercase text-sm mb-4 block">Legal</span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Terms of Service</h1>
-            <p className="text-gray-400">Last Updated: October 2023</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">Terms & Conditions</h1>
+            <h2 className="text-xl text-gray-200 font-medium mb-4">Voxora Solution Centre</h2>
+            <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 text-sm text-gray-500">
+                <span>Registered in Australia | Delivery Centres in Pakistan</span>
+                <span className="hidden md:inline">•</span>
+                <span>Effective Date: 12 December 2025</span>
+            </div>
         </div>
 
         <div className="space-y-12 text-gray-300 leading-relaxed font-light">
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">1. Acceptance of Terms</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">1. Introduction</h2>
             <p>
-              By accessing and using the website of Voxora Solution Center ("Company", "we", "us", or "our"), you accept and agree to be bound by the terms and provision of this agreement. In addition, when using these particular services, you shall be subject to any posted guidelines or rules applicable to such services. Any participation in this service will constitute acceptance of this agreement. If you do not agree to abide by the above, please do not use this service.
+              Voxora Solution Centre provides inbound customer support (voice, email, live chat, tech support, appointment setting & complaint management) from Pakistan at up to 40% lower cost than in-house teams in USA, UK, Canada & Australia.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">2. Description of Services</h2>
-            <p>
-              Voxora Solution Center provides Business Process Outsourcing (BPO) services, including but not limited to customer support, technical support, email management, and appointment setting ("Services"). We reserve the right to modify, suspend, or discontinue any aspect of our Services at any time without notice.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold text-white mb-4">3. User Obligations</h2>
-            <p className="mb-4">
-              As a user of our website or client of our services, you agree to:
-            </p>
+            <h2 className="text-2xl font-bold text-white mb-4">2. Services Offered</h2>
             <ul className="list-disc pl-6 space-y-2 marker:text-purple-500">
-              <li>Provide accurate and complete information when requesting quotes or contacting us.</li>
-              <li>Not use the website or services for any unlawful purpose.</li>
-              <li>Not attempt to interfere with the proper working of the website or compromise its security.</li>
+              <li>Inbound voice support & complaint handling</li>
+              <li>Email & ticket support</li>
+              <li>Live chat & omnichannel messaging</li>
+              <li>Technical support (L1 & L2)</li>
+              <li>Appointment setting & reminders</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">4. Intellectual Property</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">3. Minimum Contract Term</h2>
+            <div className="bg-neutral-900/50 p-6 rounded-lg border-l-4 border-purple-600">
+                <p className="mb-4">
+                  <strong className="text-white">All engagements have a strict minimum term of three (3) calendar months from the service go-live date.</strong>
+                </p>
+                <p>
+                  Early termination before completion of the initial 3-month period will require payment of the full remaining fees for the entire 3-month term as liquidated damages.
+                </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">4. Pricing & Cost Savings</h2>
             <p>
-              The Site and its original content, features, and functionality are owned by Voxora Solution Center and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws. You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our website.
+              Voxora guarantees savings of up to 40% versus average fully-loaded in-house agent costs in the United States, United Kingdom, Canada, and Australia.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">5. Limitation of Liability</h2>
-            <p>
-              In no event shall Voxora Solution Center, its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory.
-            </p>
+            <h2 className="text-2xl font-bold text-white mb-4">5. Pricing Models & Payment</h2>
+            <ul className="list-disc pl-6 space-y-2 marker:text-purple-500">
+              <li>Per agent per month / per minute / per ticket (as agreed in specific Statement of Work)</li>
+              <li>Invoiced monthly in advance</li>
+              <li>Payment due Net 15 days</li>
+              <li>Late payment: 1.5% monthly interest applied to outstanding balances</li>
+            </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">6. Governing Law</h2>
-            <p>
-              These Terms shall be governed and construed in accordance with the laws of South Australia, Australia, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
-            </p>
+            <h2 className="text-2xl font-bold text-white mb-4">6. Service Level Agreement (SLA)</h2>
+            <ul className="list-disc pl-6 space-y-2 marker:text-purple-500">
+              <li><strong className="text-white">99.5%+</strong> uptime guarantee</li>
+              <li>Average speed of answer <strong className="text-white">≤ 20 seconds</strong></li>
+              <li>CSAT <strong className="text-white">≥ 90%</strong></li>
+              <li>Detailed KPIs defined in Statement of Work (SOW)</li>
+            </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-white mb-4">7. Changes to Terms</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">7. Client Obligations</h2>
             <p>
-              We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+              Clients are required to provide necessary training material, scripts, system access, and at least 48-hour notice for significant operational changes to ensure optimal service delivery.
             </p>
           </section>
           
-          <section className="pt-8 border-t border-neutral-800">
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">8. Confidentiality & Data Security</h2>
+            <p className="mb-4">
+               We adhere to strict global security standards:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 marker:text-purple-500">
+                <li>ISO 27001:2022 Certified</li>
+                <li>PCI-DSS Compliant</li>
+                <li>GDPR Compliant</li>
+                <li>All agents sign lifelong Non-Disclosure Agreements (NDAs)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">9. Termination</h2>
+            <div className="space-y-4">
+                <p>
+                    <strong className="text-white">9.1</strong> After the initial 3-month minimum term, either party may terminate with 30 days written notice (or 60–90 days if specified in MSA).
+                </p>
+                <p>
+                    <strong className="text-white">9.2</strong> Early termination during the first 3 months triggers payment of 100% of remaining fees for the full 3-month period.
+                </p>
+                <p>
+                    <strong className="text-white">9.3</strong> Immediate termination rights reserved for non-payment (outstanding &gt;30 days) or material breach of contract.
+                </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">10. Limitation of Liability</h2>
+            <p>
+              Maximum liability is strictly capped at the total fees paid by the client in the preceding three (3) months.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">11. Governing Law</h2>
+            <p>
+              These Terms shall be governed and construed in accordance with the laws of New South Wales, Australia. Any disputes shall be subject to arbitration in Sydney.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">12. Force Majeure</h2>
+            <p>
+              Neither party shall be liable for failure to perform due to causes beyond its reasonable control including acts of God, war, pandemic, internet failure, or government restrictions.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">13. Indemnification</h2>
+            <p>
+              Each party shall indemnify the other against claims arising from its willful misconduct or gross negligence.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">14. Insurance</h2>
+            <p>
+              Voxora maintains Professional Indemnity and Cyber Liability insurance of at least AUD 5 million.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-white mb-4">15. Entire Agreement & Severability</h2>
+            <p>
+              These Terms constitute the entire agreement. If any provision is held invalid, the remainder shall continue in full force.
+            </p>
+          </section>
+          
+          <section className="pt-8 border-t border-neutral-800 mt-12">
             <p className="font-bold text-white mb-2">Contact Us</p>
              <p>
-                If you have any questions about these Terms, please contact us at <a href="mailto:Hello@voxorasolution.com" className="text-purple-500 hover:text-purple-400">Hello@voxorasolution.com</a>.
+                If you have any questions about these Terms, please contact us at <a href="mailto:Hello@voxorasolution.com" className="text-purple-500 hover:text-purple-400 font-medium">Hello@Voxorasolution.com</a>.
              </p>
           </section>
         </div>
