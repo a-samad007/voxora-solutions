@@ -22,13 +22,13 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onBack }) 
         </button>
 
         <div className="mb-12 border-b border-neutral-800 pb-8">
-            <span className="text-purple-500 font-bold tracking-widest uppercase text-sm mb-4 block">Legal</span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">Privacy Policy</h1>
-            <h2 className="text-xl text-gray-200 font-medium mb-4">Voxora Solution Centre (Australia)</h2>
-            <div className="flex flex-col gap-2 text-sm text-gray-500">
-                <p>ABN XX XXX XXX XXX | Registered Office: Goddard Drive, Salisbury Park, Adelaide, SA 5109</p>
-                <p>Last Updated: 12 December 2025</p>
-            </div>
+          <span className="text-purple-500 font-bold tracking-widest uppercase text-sm mb-4 block">Legal</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">Privacy Policy</h1>
+          <h2 className="text-xl text-gray-200 font-medium mb-4">Voxora Solution Centre (Australia)</h2>
+          <div className="flex flex-col gap-2 text-sm text-gray-500">
+            <p>ABN 47 164 053 839 | Registered Office: Goddard Drive, Salisbury Park, Adelaide, SA 5109</p>
+            <p>Last Updated: 12 December 2025</p>
+          </div>
         </div>
 
         <div className="space-y-12 text-gray-300 leading-relaxed font-light">
@@ -120,11 +120,11 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onBack }) 
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">11. Contact Our Data Protection Officer</h2>
             <div className="bg-neutral-900 p-6 rounded-lg border border-neutral-800">
-                <p className="mb-2"><strong className="text-white">Email:</strong> <a href="mailto:dpo@voxorasolution.com.au" className="text-purple-500 hover:text-purple-400 font-medium">dpo@voxorasolution.com.au</a></p>
-                <p className="text-sm text-gray-500 mt-4 pt-4 border-t border-neutral-800">
-                    Voxora Solution Centre<br/>
-                    Adelaide, Australia | 24/7 Delivery: Pakistan
-                </p>
+              <p className="mb-2"><strong className="text-white">Email:</strong> <a href="mailto:HELLO@voxorasolution.com" className="text-purple-500 hover:text-purple-400 font-medium">Hello@voxorasolution.com</a></p>
+              <p className="text-sm text-gray-500 mt-4 pt-4 border-t border-neutral-800">
+                Voxora Solution Centre<br />
+                Adelaide, Australia | 24/7 Delivery: Pakistan
+              </p>
             </div>
           </section>
         </div>

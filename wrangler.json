@@ -4,5 +4,8 @@
   "main": "worker.js",
   "assets": {
     "directory": "./dist"
+  },
+  "vars": {
+    "RESEND_API_KEY": ""
   }
 }
