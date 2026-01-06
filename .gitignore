@@ -12,9 +12,9 @@ dist
 dist-ssr
 *.local
 
-# Cloudflare Worker Configuration (may contain API keys)
-wrangler.json
+# Cloudflare Worker local development
 .wrangler/
+.dev.vars
 
 # Editor directories and files
 .vscode/*

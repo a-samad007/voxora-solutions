@@ -1,0 +1,4 @@
+# Local development environment variables
+# This file is gitignored - add your actual API key here for local testing
+
+RESEND_API_KEY=re_UMDps6h7_A9spVy5j5hMdxDbfdaQkSzmU

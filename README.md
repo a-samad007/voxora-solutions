@@ -64,20 +64,29 @@ The built files will be in the `dist` directory.
 
 ## 🚀 Deployment
 
-### Deploy to Cloudflare Workers
+### Automatic Deployment via Cloudflare Pages
 
-1. **Login to Cloudflare**
-   ```bash
-   npx wrangler login
-   ```
+Your project is already set up with **automatic deployment** through Cloudflare Pages!
 
-2. **Deploy**
-   ```bash
-   npm run build
-   npx wrangler deploy
-   ```
+**How it works:**
+1. Push code to GitHub
+2. Cloudflare Pages automatically builds and deploys
+3. Your site is live!
 
-See [DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md) for a complete deployment guide.
+**Setup Environment Variable:**
+
+To enable email functionality, add the environment variable in Cloudflare:
+
+1. Go to [Cloudflare Dashboard](https://dash.cloudflare.com/)
+2. Navigate to **Workers & Pages** → Your Project
+3. Go to **Settings** → **Environment variables**
+4. Add variable:
+   - Name: `RESEND_API_KEY`
+   - Value: Your Resend API key
+   - Environment: Production
+5. Save and redeploy
+
+**See [CLOUDFLARE_PAGES_SETUP.md](CLOUDFLARE_PAGES_SETUP.md) for detailed instructions.**
 
 ## 📧 Email Configuration
 
